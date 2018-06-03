@@ -8,6 +8,6 @@ def test_fremont_data():
     data = get_fremont_data()
     assert all(data.columns == ["West", "East", "Total"])
     assert isinstance(data.index, pd.DatetimeIndex)
-    asser(len(np.unique(data.index.time) == 24
+    assert(len(np.unique(data.index.time)) == 24)
     
 test_fremont_data()
